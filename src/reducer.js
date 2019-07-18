@@ -1,19 +1,27 @@
 const initialState = {
-'currentQuestion': {'image': 'https://restcountries.eu/data/abw.svg', 'options': ['a', 'b', 'c']},
+'currentQuestion': null,
 'gameStarted': false,
 'numQuestions': 10,
 'currQuestionNum': 0,
 'correctAnswers': 0,
-'previousQuestions': []
+'previousCodes': []
 };
 
 
 export default function(state = initialState, action) {
+    console.info(action);
     switch (action.type) {
       case 'START_GAME':
-      return {...state, 'gameStarted': true};
-      case 'START_TEST':
-      return {...state, 'currQuestionNum': 5};
+        return {...state, 'gameStarted': true,
+                        'currQuestionNum': 0,
+                        'correctAnswers': 0,
+                        'previousCodes': []};
+      case 'NEXT_QUESTION':
+          console.info("RED NEXT");
+          return {...state, 'currQuestionNum': state.currQuestionNum + 1, 'currentQuestion': action.values,
+                 'previousCodes': [...state.previousCodes, action.values.answerId]};
+      case 'ANSWER_QUESTION':
+        return {...state, 'correctAnswers': action.correct?state.correctAnswers+1:state.correctAnswers};
     default:
       return state;
     }

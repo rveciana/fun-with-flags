@@ -11,11 +11,11 @@ import {Flag} from './Flag';
 
 
 export const  Game = () => {
-    const { gameStarted, currentQuestion, currQuestionNum, numQuestions } = useSelector(state => state);
+    const { gameStarted, currentQuestion, currQuestionNum, numQuestions, correctAnswers } = useSelector(state => state);
     const dispatch = useDispatch();
     if(gameStarted){
     return (<div>
-        <div>{currQuestionNum}/{numQuestions}</div>
+        <div>{currQuestionNum}/{numQuestions} {correctAnswers}</div>
     <Flag currentQuestion={currentQuestion}/>
     </div>
     );
