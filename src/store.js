@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from 'redux';
 import { ofType, createEpicMiddleware, combineEpics } from 'redux-observable';
-import { delay, mapTo, mergeMap } from 'rxjs/operators';
+import { map, mapTo } from 'rxjs/operators';
 import reducer from './reducer';
 import {nextQuestion, nextQuestionFilled} from './actions';
 import {selectFlag} from './questions';
@@ -12,8 +12,9 @@ const startEpic = (action$, state$) => action$.pipe(
 
 const answerEpic = (action$, state$) => action$.pipe(
   ofType('ANSWER_QUESTION'),
-  mergeMap(() => new Promise(() => selectFlag(state$.previousCodes)).then(() => {console.info("DD")}))
-  
+  map(action => {
+    return nextQuestion(selectFlag(state$.previousCodes));
+  })
 );
 
 const rootEpic = combineEpics(

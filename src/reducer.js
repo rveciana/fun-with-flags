@@ -1,6 +1,7 @@
 const initialState = {
 'currentQuestion': null,
 'gameStarted': false,
+'gameEnded': false,
 'numQuestions': 10,
 'currQuestionNum': 0,
 'correctAnswers': 0,
