@@ -1,0 +1,30 @@
+.Game {
+    height: 100vh; 
+    width: 100vw;
+}
+
+.Game .result{
+    padding-top: 30%;
+    font-size: calc(15px + 2vmin);
+
+}
+.Game.max{
+    background-image: url("/excellent.gif");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center; 
+ }
+
+ .Game.rookie{
+    background-image: url("/rookie.gif");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center; 
+ }
+
+ .Game.regular{
+    background-image: url("/regular.gif");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center; 
+ }

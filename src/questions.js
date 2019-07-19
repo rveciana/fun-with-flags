@@ -5,7 +5,6 @@ export const selectFlag = (excluded=[]) => {
     const wrongItem1Idx = getItemInt([selectedItemIdx]);
     const wrongItem2Idx = getItemInt([selectedItemIdx], wrongItem1Idx);
     const flagCode = data[selectedItemIdx].cca3.toLowerCase();
-    console.info("SELECT: ", excluded, selectedItemIdx);
     return {'answerId': selectedItemIdx, 'image': 'https://restcountries.eu/data/'+flagCode+'.svg', 'correctAnswer': data[selectedItemIdx].name.common,
             'options': shuffle([data[selectedItemIdx].name.common,
             data[wrongItem1Idx].name.common, data[wrongItem2Idx].name.common])};
