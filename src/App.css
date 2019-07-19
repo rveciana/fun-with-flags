@@ -13,5 +13,10 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #d8ecf1;
+}
+
+a, a:link, a:visited, a:hover, a:focus, a:active{
+  color:white;
+  text-decoration: none;
 }

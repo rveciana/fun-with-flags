@@ -6,6 +6,7 @@ import { startGame } from './actions';
 import {
     faPlay
   } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {Flag} from './Flag';
@@ -32,6 +33,7 @@ export const  Game = () => {
         return (<div className={classes}>
             <div className="result">You scored {correctAnswers} of {numQuestions}</div>
             <div onClick={()=> {dispatch(startGame());}}>Play again <FontAwesomeIcon icon={faPlay} style={{ color: 'green'}}/></div>
+            <div><a href="https://github.com/rveciana/fun-with-flags">Check the code <FontAwesomeIcon icon={faGithub}/></a></div>
             </div>);
     } else {
     return (
