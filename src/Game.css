@@ -9,21 +9,21 @@
 
 }
 .Game.max{
-    background-image: url("/excellent.gif");
+    background-image: url("./img/excellent.gif");
     background-repeat: no-repeat;
     background-size: 100vw auto;
     background-position: center; 
  }
 
  .Game.rookie{
-    background-image: url("/rookie.gif");
+    background-image: url("./img/rookie.gif");
     background-repeat: no-repeat;
     background-size: 100vw auto;
     background-position: center; 
  }
 
  .Game.regular{
-    background-image: url("/regular.gif");
+    background-image: url("./img/regular.gif");
     background-repeat: no-repeat;
     background-size: 100vw auto;
     background-position: center; 
