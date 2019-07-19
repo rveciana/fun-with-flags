@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/fun-with-flags/static/css/main.1ab490c9.chunk.css",
-    "main.js": "/fun-with-flags/static/js/main.0fdc27d5.chunk.js",
-    "main.js.map": "/fun-with-flags/static/js/main.0fdc27d5.chunk.js.map",
+    "main.css": "/fun-with-flags/static/css/main.245b4813.chunk.css",
+    "main.js": "/fun-with-flags/static/js/main.dd98cec1.chunk.js",
+    "main.js.map": "/fun-with-flags/static/js/main.dd98cec1.chunk.js.map",
     "runtime~main.js": "/fun-with-flags/static/js/runtime~main.a63bd2cd.js",
     "runtime~main.js.map": "/fun-with-flags/static/js/runtime~main.a63bd2cd.js.map",
     "static/js/2.ebbf952c.chunk.js": "/fun-with-flags/static/js/2.ebbf952c.chunk.js",
     "static/js/2.ebbf952c.chunk.js.map": "/fun-with-flags/static/js/2.ebbf952c.chunk.js.map",
     "index.html": "/fun-with-flags/index.html",
-    "precache-manifest.1c7dd386b206f80b1f740b7e336ef801.js": "/fun-with-flags/precache-manifest.1c7dd386b206f80b1f740b7e336ef801.js",
+    "precache-manifest.ddcc8ff9f40760cb6d9b86a891b816f7.js": "/fun-with-flags/precache-manifest.ddcc8ff9f40760cb6d9b86a891b816f7.js",
     "service-worker.js": "/fun-with-flags/service-worker.js",
-    "static/css/main.1ab490c9.chunk.css.map": "/fun-with-flags/static/css/main.1ab490c9.chunk.css.map"
+    "static/css/main.245b4813.chunk.css.map": "/fun-with-flags/static/css/main.245b4813.chunk.css.map",
+    "static/media/Game.css": "/fun-with-flags/static/media/rookie.ce50405e.gif"
   }
 }
